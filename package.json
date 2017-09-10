@@ -6,12 +6,20 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "standard": "^10.0.3"
   },
-  "scripts" : {
+  "scripts": {
+    "build": "webpack",
     "test": "standard"
+  },
+  "standard": {
+    "ignore": [
+      "app/assets/config"
+    ],
+    "parser": "babel-eslint"
   }
 }

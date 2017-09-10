@@ -1,8 +1,7 @@
-const webpack = require('webpack')
 const path = require('path')
 
 const config = {
-  entry: "./javascripts/app.js",
+  entry: './javascripts/app.js',
   output: {
     path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
     filename: 'application.js'
@@ -20,4 +19,4 @@ const config = {
   }
 }
 
-module.exports = config;
+module.exports = config
